@@ -1,0 +1,40 @@
+Job 101 submitted at 5 ms
+Job 102 submitted at 10 ms
+Job 103 submitted at 15 ms
+Job 102 started at 20 ms
+Job 101 started at 30 ms
+Job 103 started at 70 ms
+JOB STATUS
+Job       Submitted        Started    Actual Time    Completed      Status
+101       5                30         60             90             COMPLETED
+102       10               20         35             55             COMPLETED
+103       15               70         90             160            COMPLETED
+END JOB STATUS
+EXECUTION_ORDER
+102 20 55
+101 30 90
+103 70 160
+END_EXECUTION_ORDER
+TREE
+LEVEL 0: [102]
+LEVEL 1: [101]|[103]
+END_TREE
+INORDER: [101, 102, 103]
+MAX_HEAP: []
+TREE_STATS
+records=3
+height=2
+insertions=3
+deletions=0
+left_rotations=1
+right_rotations=0
+END_TREE_STATS
+HEAP_STATS
+size=0
+max_size=3
+insertions=3
+extractions=3
+removals=0
+priority_updates=0
+rebuilds=0
+END_HEAP_STATS

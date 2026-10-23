@@ -1,0 +1,47 @@
+Job 101 submitted at 5 ms
+Job 102 submitted at 10 ms
+Job 103 submitted at 15 ms
+Job 104 submitted at 20 ms
+Job 105 submitted at 25 ms
+Job 101 priority updated to 9
+Job 101 started at 35 ms
+ERROR: Job 101 priority cannot be updated while status is RUNNING
+Job 104 priority updated to 8
+Job 104 started at 50 ms
+Job 103 priority updated to 3
+JOB STATUS
+Job     Submitted   Started   Actual Time   Completed   Status
+101     5           35        55            90          COMPLETED
+102     10          null      null          null        WAITING
+103     15          null      null          null        WAITING
+104     20          50        50            100         RUNNING
+105     25          null      null          null        WAITING
+END JOB STATUS
+EXECUTION_ORDER
+101 35 90
+104 50 100
+END_EXECUTION_ORDER
+TREE
+LEVEL 0: [102]
+LEVEL 1: [101]|[104]
+LEVEL 2: NULL|NULL|[103]|[105]
+END_TREE
+INORDER: [101, 102, 103, 104, 105]
+MAX_HEAP: [(105,5,60), (103,3,70), (102,4,30)]
+TREE_STATS
+records=5
+height=3
+insertions=5
+deletions=0
+left_rotations=2
+right_rotations=0
+END_TREE_STATS
+HEAP_STATS
+size=3
+max_size=5
+insertions=5
+extractions=2
+removals=0
+priority_updates=3
+rebuilds=0
+END_HEAP_STATS
